@@ -1,0 +1,56 @@
+Web Developer Workflow
+
+
+`````````````````````````````Git
+
+Project = Repository (repo)
+Working directory = the folder location on your computer where the project lives
+Staging = preparing, getting ready. Controls what gets committed
+Commit = Git's way of "saving". files needed to be staged before they can be commited
+
+Git stores your repository in a hidden folder in your local machine. A push request is required to sync your files to a webserver. Alternatively, you can can sync the files from the webserver to your local machine using a pull request
+
+cd into your working directory
+use "git init" to create repository
+
+git status -- which files as changed. red file names means that have not been add to staging. 
+git add "filename" - to add file to staging      -git add -A    - will add all files on git status to staging
+git commit -m "Commit message"  - commits changes
+git checkout -- . grabs files from local repo
+git clone "link"   - will clone a repo from a server
+git remote -v  - tells you the location git thinks you want to push the files to
+git remote set-url origin "url here"  - tells git the url you want to push to
+git push origin "branch"  - will push to whatever origin url you have set
+
+
+````````````````````````````Node and NPM
+
+npm init  - use it to create a package.json file
+npm install --save    - will your packages to the dependancies section of the package.json file
+npm install --save-dev will install packages to the dev depandencies section of the package.json file. Meaning theyre packages meant to make our lives easier as developers. regular npm install --save means it is a dependancy for browsers
+
+
+```````````````````````````Gulp
+What is gulp?
+	A build system
+	A build tool
+	A task runner
+	gulp = automation
+
+Lightweight
+Efficient
+Incredibly quick
+
+Steps to installing gulp
+
+1. Install globally
+npm install packagename --global
+
+2. install locally in your project file.
+
+
+on gulpfile.js
+var gulp = require('gulp');
+
+to run the default gulp task you can just type "gulp" in the command line.
+to run a specific task you can type "gulp nameoftask"
