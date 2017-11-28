@@ -21,7 +21,12 @@
       </nav>
     </header>
     <div class="large-hero">
-      <img src="assets/images/hero--large.jpg">
+      <picture>
+        <source srcset="assets/images/hero--large.jpg, assets/images/hero--large-hi-dpi-i.jpg 3840w" media="(min-width: 1380px)">
+        <source srcset="assets/images/hero--medium.jpg assets/images/hero--medium-hi-dpi-i.jpg 2760w" media="(min-width: 990px)">
+        <source srcset="assets/images/hero--small.jpg, assets/images/hero--small-hi-dpi-i.jpg 1980w" media="(min-width: 640px)">
+        <img srcset="assets/images/hero--smaller.jpg, assets/images/hero--smaller-hi-dpi-i.jpg 1280w" alt="Coastal view of of ocean and Mountains">
+      </picture>
       <div class="large-hero__text-content">
         <h1 class="large-hero__title">Your clarity</h1>
         <h2 class="large-hero__subtitle">One trip away.</h2>
